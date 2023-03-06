@@ -10,7 +10,7 @@ start_ment = "# 은행 이자 계산기"
 
 st.write(start_ment)
 # st.image("https://i.imgur.com/D7uu8FN.jpg", width=300, height=200) 
-st.number_input(label, value)
+#st.number_input(label, value)
 
 
 # 적금 사진 링크

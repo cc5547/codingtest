@@ -1,30 +1,44 @@
+# streamlit 라이브러리 호출
+# 상대경로 복사 : material/02_second_webapp/app.py
 import streamlit as st
-import pandas as pd
-from sklearn.datasets import load_iris
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.model_selection import train_test_split
+import random
 
-st.title("붓꽃 데이터 분석")
+# st.write("함수를 응용해서 페이지 만들어보기")
 
-# 데이터 로드
-iris = load_iris()
-X = pd.DataFrame(iris.data, columns=iris.feature_names)
-y = pd.Series(iris.target, name="species")
+st.write("# 행운 뽑기")
 
-# 훈련/테스트 데이터 분리
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+# 0~9까지의 번호를 고르면
 
-# 모델 학습
-clf = DecisionTreeClassifier(random_state=42)
-clf.fit(X_train, y_train)
+number = st.selectbox("번호를 골라주세요", list(range(10)))
+st.write(f"내가 고른 번호 : {number}")
 
-# 예측 결과 출력
-st.subheader("예측 결과")
-y_pred = clf.predict(X_test)
-result_df = pd.DataFrame({"실제값": y_test, "예측값": y_pred})
-st.write(result_df)
+# 상금 -> 상금을 내가 입력하게 함
 
-# 정확도 출력
-st.subheader("정확도")
-accuracy = clf.score(X_test, y_test)
-st.write(accuracy)
+# prize = st.number_input(
+#   "당첨 시의 상금을 입력해주세요",
+#   min_value=1000,
+#   max_value=10000
+# )
+prize = st.slider(
+  "당첨 시의 상금을 입력해주세요",
+  1000,
+  10000,
+  step=100,
+)
+st.write(f"당첨 시의 상금 : {prize}")
+
+def my_fun():
+  # random.choice? -> 추첨 로직
+  st.balloons()
+
+# button -> 당첨입니다! / 떨어졌습니다
+pushed = st.button("당첨 알아보기", on_click=my_fun)
+
+if pushed:
+  # st.write("버튼이 눌렸습니다")
+  result = random.choice(range(10))
+  st.info(f"뽑힌 번호는... {result}번!")
+  if result == number:
+    st.success(f"축하합니다! 당첨입니다. 상금 {prize}원을 받으세요!")
+  else:
+    st.error(f"아쉽습니다! 낙첨입니다. 상금 {prize}원은 없던일로 ㅠㅠ")

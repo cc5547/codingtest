@@ -4,12 +4,12 @@ import streamlit as st
 # 은행 이자 계산기
 
 start_ment = "# 은행 이자 계산기"
-start_picture = "https://i.imgur.com/D7uu8FN.jpg" width = "300" height = "200"
+start_picture = "https://i.imgur.com/D7uu8FN.jpg", width = "300", height = "200"
 
 
 st.write(start_ment, use_column_width = True)
 
-st.img(start_picture, use_column_width = True)
+st.image(start_picture, use_column_width = True)
 
 
 # 적금 사진 링크

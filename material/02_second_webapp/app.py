@@ -4,5 +4,4 @@ import streamlit as st
 # 은행 이자 계산기
 st.write("# 은행 이자 계산기")
 
-
-(<img src="https://i.imgur.com/D7uu8FN.jpg" width="300" height="200">)
+st.img(<center><img src="https://i.imgur.com/D7uu8FN.jpg" width="300" height="200"></center>)

@@ -11,7 +11,7 @@ st.write("# 은행 이자 계산기")
 #   )
 
 st.image(
-    # "https://imgur.com/D7uu8FN   // <img src="https://i.imgur.com/D7uu8FN.jpg" width="300" height="200">
-    "https://blog.kakaocdn.net/dn/JvPqb/btqAiWpd8sf/Ah9IYr6lDRBb8oxSCJYQyK/img.png"
+    <img src="https://imgur.com/D7uu8FN"  width="300" height="200">
+    # "https://blog.kakaocdn.net/dn/JvPqb/btqAiWpd8sf/Ah9IYr6lDRBb8oxSCJYQyK/img.png"
   
   )

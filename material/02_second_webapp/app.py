@@ -5,12 +5,13 @@ import streamlit as st
 
 # start_picture = "https://i.imgur.com/D7uu8FN.jpg"
 # , use_column_width = True << 가운데 정렬
+# st.number_input(label, value) << 데이터 입력
 
 start_ment = "# 은행 이자 계산기"
 
 st.write(start_ment)
-# st.image("https://i.imgur.com/D7uu8FN.jpg", width=300, height=200) 
-#st.number_input(label, value)
+st.image('https://i.imgur.com/D7uu8FN.jpg', width=300, height=200) 
+
 
 
 # 적금 사진 링크

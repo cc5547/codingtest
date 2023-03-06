@@ -2,6 +2,7 @@
 # 상대경로 복사 : material/02_second_webapp/app.py
 import streamlit as st
 # 은행 이자 계산기
+<center>
 st.write("# 은행 이자 계산기")
 
 # st.img(
@@ -16,3 +17,4 @@ st.image(
     "https://i.imgur.com/D7uu8FN.jpg"
     # 유튜브 사진 // "https://blog.kakaocdn.net/dn/JvPqb/btqAiWpd8sf/Ah9IYr6lDRBb8oxSCJYQyK/img.png"
   )
+</center>

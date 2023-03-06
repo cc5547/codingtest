@@ -9,7 +9,7 @@ start_picture = "https://i.imgur.com/D7uu8FN.jpg"
 
 st.write(start_ment, use_column_width = True)
 
-st.image(start_picture, , width = "300", height = "200", use_column_width = True)
+st.image(start_picture, width = "300", height = "200", use_column_width = True)
 
 
 # 적금 사진 링크

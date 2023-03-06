@@ -3,7 +3,7 @@
 import streamlit as st
 # 은행 이자 계산기
 
-st.write(<center>"# 은행 이자 계산기"</center>)
+st.write("# 은행 이자 계산기", use_column_width = True)
 
 # st.img(
 #   <center>

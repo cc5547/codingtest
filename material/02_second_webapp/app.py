@@ -10,10 +10,14 @@ st.write(<center>"# 은행 이자 계산기"</center>)
 #   <img src="https://i.imgur.com/D7uu8FN.jpg" width="300" height="200">
 #   </center>
 #   )
+# 적금 사진 링크
 
+start_img = "https://i.imgur.com/D7uu8FN.jpg"
 st.image(
-    # <img src="https://imgur.com/D7uu8FN"  width="300" height="200">
+    
+    img src="https://i.imgur.com/D7uu8FN.jpg"  width="300" height="200"
 
-    "https://i.imgur.com/D7uu8FN.jpg"
+    
+    use_column_width=True
     # 유튜브 사진 // "https://blog.kakaocdn.net/dn/JvPqb/btqAiWpd8sf/Ah9IYr6lDRBb8oxSCJYQyK/img.png"
   )

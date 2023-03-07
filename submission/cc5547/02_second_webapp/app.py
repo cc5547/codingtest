@@ -20,6 +20,7 @@ def main() :
 
     with empty1 :
         # empty() # 여백부분1
+        pass
    
     with con1 :
       img = start()

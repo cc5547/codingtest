@@ -7,16 +7,32 @@
 # 은행 이자 계산기
 import streamlit as st
 from PIL import Image
-
-start_ment = "# 은행 이자 계산기"
-picture_URL = "https://i.imgur.com/D7uu8FN.jpg" 
 st.set_page_config(layout="wide")
 
 
- with st.container():
-  
+
+
+def start():
+  start_ment = "# 은행 이자 계산기"
+  picture_URL = "https://i.imgur.com/D7uu8FN.jpg" 
   st.write(start_ment)
-  st.image(picture_URL)
+  st.image(picture_URL, use_column_width = True)
+
+def main():
+  start()
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

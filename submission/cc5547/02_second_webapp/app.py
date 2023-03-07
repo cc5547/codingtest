@@ -14,31 +14,38 @@ empyt1,con5,con6,empty2 = st.columns([0.3,0.5,0.5,0.3])
 def main() :
 
     with empty1 :
-        empty() # 여백부분1
+        # empty() # 여백부분1
    
     with con1 :
-        이미지
+        picture_URL = "https://i.imgur.com/D7uu8FN.jpg" 
+        st.image(picture_URL)
 
     with con2 :
-        셀렉트박스
-        라디오버튼
-        라디오버튼
+      pass
+        # 셀렉트박스
+        # 라디오버튼
+        # 라디오버튼
 
     with con3 :
-     	데이터프레임
+      pass
+     	# 데이터프레임
 
     with con4 :
-		긴 셀렉트박스
+      pass
+		# 긴 셀렉트박스
 
     with con5 :
-		동영상 
+      pass
+		# 동영상 
      
     with con6 :
-		동영상 제목
-        동영상 설명
+		# 동영상 제목
+    #     동영상 설명
+      pass
 
     with empty2 :
-	   empty() # 여백부분2
+	  #  empty() # 여백부분2
+      pass
 
 
 
@@ -78,7 +85,7 @@ def main() :
 # def start():
 #   start_ment = "# 은행 이자 계산기"
 #   picture_URL = "https://i.imgur.com/D7uu8FN.jpg" 
-
+#   st.image(picture_URL, use_column_width = True)
 #   st.write(start_ment, use_column_width = True)
 #   st.image(picture_URL, use_column_width = True)
 

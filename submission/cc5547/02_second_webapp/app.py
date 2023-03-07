@@ -16,8 +16,13 @@ def start():
   start_ment = "# 은행 이자 계산기"
   picture_URL = "https://i.imgur.com/D7uu8FN.jpg" 
 
-  st.write(start_ment)
+  st.write(start_ment, use_column_width = True)
   st.image(picture_URL, use_column_width = True)
+
+
+
+
+
 
 start()
 

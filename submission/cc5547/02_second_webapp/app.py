@@ -28,6 +28,9 @@ with tab2:
   #tab B를 누르면 표시될 내용 
   st.write('안녕')
 
+st.sidebar.title('this is sidebar')
+st.sidebar.checkbox('체크박스에 표시될 문구')
+
 
 
 

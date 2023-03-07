@@ -17,7 +17,6 @@ empyt1,con5,con6,empty2 = st.columns([0.3,0.5,0.5,0.3])
 
 
 def main() :
-
     with empty1 :
         # empty() # 여백부분1
         pass
@@ -47,14 +46,13 @@ def main() :
 		# 동영상 
      
     with con6 :
+      pass
 		# 동영상 제목
     #     동영상 설명
-      pass
 
     with empty2 :
-	  #  empty() # 여백부분2
       pass
-
+	  #  empty() # 여백부분2
 
 
 

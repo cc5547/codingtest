@@ -1,10 +1,6 @@
 import streamlit as st
 
-<<<<<<< HEAD
-col1,col2 = st.columns([3, 3])
-=======
 col1,col2 = st.columns([5, 5])
->>>>>>> dfb130f14ab17b8f901ccb85aed20d75c1a1cd76
 # 공간을 2:3 으로 분할하여 col1과 col2라는 이름을 가진 컬럼을 생성합니다.  
 
 with col1 :
@@ -12,12 +8,9 @@ with col1 :
   st.title('here is column1')
   picture_URL = "https://i.imgur.com/D7uu8FN.jpg"
   st.image(picture_URL)
-<<<<<<< HEAD
   
-=======
-  picture_URL = "https://i.imgur.com/D7uu8FN.jpg" 
-  st.image(picture_URL, use_column_width = True)
->>>>>>> dfb130f14ab17b8f901ccb85aed20d75c1a1cd76
+  # picture_URL = "https://i.imgur.com/D7uu8FN.jpg" 
+  # st.image(picture_URL, use_column_width = True)
 with col2 :
   # column 2 에 담을 내용
   st.title('here is column2')

@@ -11,9 +11,9 @@ empyt1,con2,con3,empty2 = st.columns([0.3,0.5,0.5,0.3])
 empyt1,con4,empty2 = st.columns([0.3,1.0,0.3])
 empyt1,con5,con6,empty2 = st.columns([0.3,0.5,0.5,0.3])
 
-def start():
-  picture_URL = "https://i.imgur.com/D7uu8FN.jpg" 
-  st.image(picture_URL)
+# def start():
+#   picture_URL = "https://i.imgur.com/D7uu8FN.jpg" 
+#   st.image(picture_URL)
 
 
 def main() :
@@ -23,7 +23,8 @@ def main() :
         pass
    
     with con1 :
-      img = start()
+      # img = start()
+      pass
         
 
     with con2 :

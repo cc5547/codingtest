@@ -4,7 +4,7 @@ import streamlit as st
 col1,col2 = st.columns([5, 5])
 
 # 탭 생성 : 첫번째 탭의 이름은 Tab A 로, Tab B로 표시합니다. 
-tab1, tab2= st.tabs(['Tab A' , 'Tab B'], use_column_width = True)
+tab1, tab2= st.tabs(['Tab A' , 'Tab B'])
 
 with col1 :
   # column 1 에 담을 내용

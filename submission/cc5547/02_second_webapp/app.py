@@ -1,4 +1,4 @@
-from tkinter.tix import COLUMN
+# from tkinter.tix import COLUMN
 from pyparsing import empty
 import streamlit as st
 import numpy as np

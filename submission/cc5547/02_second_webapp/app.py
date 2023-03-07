@@ -35,6 +35,7 @@ def main() :
 
     with con3 :
       pass
+      * "hi"
      	# 데이터프레임
 
     with con4 :

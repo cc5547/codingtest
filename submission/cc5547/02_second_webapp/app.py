@@ -1,20 +1,32 @@
 import streamlit as st
 
-col1,col2 = st.columns([5, 5])
 # 공간을 2:3 으로 분할하여 col1과 col2라는 이름을 가진 컬럼을 생성합니다.  
+col1,col2 = st.columns([5, 5])
+
+# 탭 생성 : 첫번째 탭의 이름은 Tab A 로, Tab B로 표시합니다. 
+tab1, tab2= st.tabs(['Tab A' , 'Tab B'])
 
 with col1 :
   # column 1 에 담을 내용
-  st.title('here is column1')
+  st.title('컬럼1')
   picture_URL = "https://i.imgur.com/D7uu8FN.jpg"
   st.image(picture_URL)
   
   # picture_URL = "https://i.imgur.com/D7uu8FN.jpg" 
   # st.image(picture_URL, use_column_width = True)
+
 with col2 :
   # column 2 에 담을 내용
-  st.title('here is column2')
-  st.checkbox('this is checkbox1 in col2 ')
+  st.title('컬럼2')
+  st.checkbox('체크박스 컬럼2 ')
+
+with tab1:
+  #tab A 를 누르면 표시될 내용
+  st.write('안녕하다')
+
+with tab2:
+  #tab B를 누르면 표시될 내용 
+  st.write('안녕')
 
 
 

@@ -1,58 +1,21 @@
-# from tkinter.tix import COLUMN
-from pyparsing import empty
 import streamlit as st
-import numpy as np
-import pandas as pd
-from PIL import Image
 
-st.set_page_config(layout="wide")
-empty1,con1,empty2 = st.columns([0.3,1.0,0.3])
-empyt1,con2,con3,empty2 = st.columns([0.3,0.5,0.5,0.3])
-empyt1,con4,empty2 = st.columns([0.3,1.0,0.3])
-empyt1,con5,con6,empty2 = st.columns([0.3,0.5,0.5,0.3])
+col1,col2 = st.columns([2,3])
+# 공간을 2:3 으로 분할하여 col1과 col2라는 이름을 가진 컬럼을 생성합니다.  
 
-# def start():
-#   picture_URL = "https://i.imgur.com/D7uu8FN.jpg" 
-#   st.image(picture_URL)
+with col1 :
+  # column 1 에 담을 내용
+  st.title('here is column1')
+with col2 :
+  # column 2 에 담을 내용
+  st.title('here is column2')
+  st.checkbox('this is checkbox1 in col2 ')
 
 
-def main() :
-    with empty1 :
-        # empty() # 여백부분1
-        pass
-   
-    with con1 :
-      # img = start()
-      pass
-        
-
-    with con2 :
-      pass
-        # 셀렉트박스
-        # 라디오버튼
-        # 라디오버튼
-
-    with con3 :
-      pass
-      * "hi"
-     	# 데이터프레임
-
-    with con4 :
-      pass
-		# 긴 셀렉트박스
-
-    with con5 :
-      pass
-		# 동영상 
-     
-    with con6 :
-      pass
-		# 동영상 제목
-    #     동영상 설명
-
-    with empty2 :
-      pass
-	  #  empty() # 여백부분2
+# with 구문 말고 다르게 사용 가능 
+col1.subheader(' i am column1  subheader !! ')
+col2.checkbox('this is checkbox2 in col2 ') 
+#=>위에 with col2: 안의 내용과 같은 기능을합니다
 
 
 

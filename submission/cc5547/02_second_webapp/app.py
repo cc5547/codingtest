@@ -15,8 +15,8 @@ picture_URL = "https://i.imgur.com/D7uu8FN.jpg"
 
 #  with st.container():
 #   st.write(start_ment)
-  
-st.image(picture_URL, width = 300, height = 200)
+st.set_page_config(layout="wide")
+st.image(picture_URL)
 
 # st.write(
 #   start_ment

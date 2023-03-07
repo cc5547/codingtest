@@ -10,11 +10,11 @@ from PIL import Image
 
 start_ment = "# 은행 이자 계산기"
 picture_URL = "https://i.imgur.com/D7uu8FN.jpg" 
-# 
+st.set_page_config(layout="wide")
 
 
  with st.container():
-  st.set_page_config(layout="wide")
+  
   st.write(start_ment)
   st.image(picture_URL)
 

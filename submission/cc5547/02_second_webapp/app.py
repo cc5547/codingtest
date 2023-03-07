@@ -4,11 +4,11 @@ import streamlit as st
 col1,col2 = st.columns([5, 5])
 
 # 탭 생성 : 첫번째 탭의 이름은 Tab A 로, Tab B로 표시합니다. 
-tab1, tab2= st.tabs(['Tab A' , 'Tab B'])
+tab1, tab2= st.tabs(['Tab A' , 'Tab B'], use_column_width = True)
 
 with col1 :
   # column 1 에 담을 내용
-  st.title('컬럼1', use_column_width = True)
+  st.title('컬럼1')
   picture_URL = "https://i.imgur.com/D7uu8FN.jpg"
   st.image(picture_URL)
   
@@ -17,7 +17,7 @@ with col1 :
 
 with col2 :
   # column 2 에 담을 내용
-  st.title('컬럼2', use_column_width = True)
+  st.title('컬럼2')
   st.checkbox('체크박스 컬럼2 ')
 
 with tab1:
